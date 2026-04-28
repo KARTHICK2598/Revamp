@@ -1,0 +1,13 @@
+name: Basic github action
+
+on:
+ push:
+  branches: ["main"]
+
+jobs:
+ Basic:
+  runs-on: [self-hosted, Linux ]
+
+steps:
+ - name: file
+  run: echo "helo from" 
