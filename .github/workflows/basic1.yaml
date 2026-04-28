@@ -1,13 +1,13 @@
 name: Basic github action
 
 on:
- push:
-  branches: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
- Basic:
-  runs-on: [self-hosted, Linux ]
+  Basic:
+    runs-on: self-hosted
+    steps:
+      - name: file
+        run: echo "hello from"
 
-steps:
- - name: file
-  run: echo "helo from" 
